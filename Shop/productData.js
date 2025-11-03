@@ -12,8 +12,8 @@ window.PRODUCT_DATA = {
     currency: "EGP",
     longDescription: "Solid wood frame, hand-carved details, original upholstery restored. Dimensions: 180 x 85 x 95 cm. Good condition with minor patina — gives a true vintage feel.",
     images: [
-      "./Furniture/skysofa2.jpg",
-      "./Furniture/skysofa1.jpg",
+      "./Furniture/skysofa2.webp",
+      "./Furniture/skysofa1.webp",
       "./Furniture/skysofa3.webp"
     ]
   },
@@ -24,7 +24,7 @@ window.PRODUCT_DATA = {
     price: 8000,
     currency: "EGP",
     longDescription: "زوج من الكراسي الإيطالية الكلاسيكية مع إطار خشبي منحوت يدويًا. تنجيد أنيق يعكس الطابع الأوروبي العريق.",
-    images: ["./Furniture/Chairs+Frame.jpg"]
+    images: ["./Furniture/Chairs+Frame.webp"]
   },
 
   "BombCommode": {
@@ -33,7 +33,7 @@ window.PRODUCT_DATA = {
     price: 9500,
     currency: "EGP",
     longDescription: "خزانة كومود بتصميم بومبيه فرنسي، مزودة بدرجين ومسكات نحاسية مزخرفة. قطعة أنتيك فاخرة لإضافة لمسة كلاسيكية.",
-    images: ["./Furniture/BombCommode.jpg"]
+    images: ["./Furniture/BombCommode.webp"]
   },
 
   "Desk": {
@@ -42,7 +42,7 @@ window.PRODUCT_DATA = {
     price: 7000,
     currency: "EGP",
     longDescription: "مكتب خشبي أنتيك بتفاصيل منحوتة يدوياً، سطح واسع مناسب للكتابة أو العرض.",
-    images: ["./Furniture/Desk.jpg"]
+    images: ["./Furniture/Desk.webp"]
   },
 
   "Kitchenware1": {
@@ -60,7 +60,7 @@ window.PRODUCT_DATA = {
     price: 3200,
     currency: "EGP",
     longDescription: "ساعة طاولة أنتيك بلمسات نحاسية وزخارف كلاسيكية.",
-    images: ["./Clocks/TableClock.JPG"]
+    images: ["./Clocks/TableClock.webp"]
   },
 
   "BohemianSet": {
@@ -69,7 +69,7 @@ window.PRODUCT_DATA = {
     price: 4000,
     currency: "EGP",
     longDescription: "طقم زجاج بوهيمي فاخر بزخارف ملونة يدوية.",
-    images: ["./Glassware/BohemianSet.JPG"]
+    images: ["./Glassware/BohemianSet.webp"]
   },
 
   "Bonbonera": {
@@ -78,7 +78,7 @@ window.PRODUCT_DATA = {
     price: 1800,
     currency: "EGP",
     longDescription: "بونبونيرة زجاجية أنتيك لحفظ الحلويات أو التقديم.",
-    images: ["./Glassware/Bonbonera2.jpg"]
+    images: ["./Glassware/Bonbonera2.webp"]
   },
 
   "FrenchSet": {
@@ -87,7 +87,7 @@ window.PRODUCT_DATA = {
     price: 4200,
     currency: "EGP",
     longDescription: "طقم زجاج فرنسي أنيق بتفاصيل دقيقة.",
-    images: ["./Glassware/FrenchSet.JPG"]
+    images: ["./Glassware/FrenchSet.webp"]
   },
 
   "MirrorCenterPiece": {
@@ -96,7 +96,7 @@ window.PRODUCT_DATA = {
     price: 2800,
     currency: "EGP",
     longDescription: "سنتر بيس زجاجي مع قاعدة مرآة، مثالي للديكور الكلاسيكي.",
-    images: ["./Glassware/MirrorCenterPiece.JPG"]
+    images: ["./Glassware/MirrorCenterPiece.webp"]
   },
 
   "BrassCraft": {
@@ -105,7 +105,7 @@ window.PRODUCT_DATA = {
     price: 2600,
     currency: "EGP",
     longDescription: "قطعة زجاجية مزخرفة بإطار نحاسي فاخر.",
-    images: ["./Glassware/BrassCraf.JPG"]
+    images: ["./Glassware/BrassCraf.webp"]
   },
 
   "ItalianLamps": {
@@ -114,7 +114,7 @@ window.PRODUCT_DATA = {
     price: 6000,
     currency: "EGP",
     longDescription: "زوج من الأباجورات الإيطالية الكلاسيكية بقاعدة نحاسية.",
-    images: ["./Lighting/ItalianLamps.JPG"]
+    images: ["./Lighting/ItalianLamps.webp"]
   },
 
   "FrenchTorch": {
@@ -123,7 +123,7 @@ window.PRODUCT_DATA = {
     price: 3500,
     currency: "EGP",
     longDescription: "شمعدان جداري فرنسي بتصميم شعلة أنيق.",
-    images: ["./Lighting/FrenchTorch.JPG"]
+    images: ["./Lighting/FrenchTorch.webp"]
   },
 
   "Mirror1": {
@@ -132,7 +132,7 @@ window.PRODUCT_DATA = {
     price: 3000,
     currency: "EGP",
     longDescription: "مرآة أنتيك بإطار خشبي مزخرف.",
-    images: ["./Mirror/mirror1.jpg"]
+    images: ["./Mirror/mirror1.webp"]
   },
 
   "FrenchBrass": {
@@ -141,7 +141,7 @@ window.PRODUCT_DATA = {
     price: 4800,
     currency: "EGP",
     longDescription: "طقم مرايا فرنسي بإطار نحاسي فاخر.",
-    images: ["./Mirror/French Brass Set.JPG"]
+    images: ["./Mirror/French Brass Set.webp"]
   },
 
   "FlowersSIRMA": {
@@ -150,7 +150,7 @@ window.PRODUCT_DATA = {
     price: 2200,
     currency: "EGP",
     longDescription: "لوحة مزخرفة بالزهور بتقنية السيرما اليدوية.",
-    images: ["./Mirror/FlowersSIRMA.JPG"]
+    images: ["./Mirror/FlowersSIRMA.webp"]
   },
 
   "BirdSIRMA": {
@@ -159,7 +159,7 @@ window.PRODUCT_DATA = {
     price: 2200,
     currency: "EGP",
     longDescription: "لوحة مزخرفة بطائر بتقنية السيرما اليدوية.",
-    images: ["./Mirror/BirdSIRMA.JPG"]
+    images: ["./Mirror/BirdSIRMA.webp"]
   },
 
   "JapaneseRolls": {
@@ -168,7 +168,7 @@ window.PRODUCT_DATA = {
     price: 2600,
     currency: "EGP",
     longDescription: "لوحة يابانية قديمة بأسلوب اللفائف التقليدية.",
-    images: ["./Mirror/JapaneseRolls.JPG"]
+    images: ["./Mirror/JapaneseRolls.webp"]
   },
 
   "Landscape": {
@@ -177,7 +177,7 @@ window.PRODUCT_DATA = {
     price: 2000,
     currency: "EGP",
     longDescription: "لوحة أنتيك لمنظر طبيعي كلاسيكي.",
-    images: ["./Mirror/Landscape.jpg"]
+    images: ["./Mirror/Landscape.webp"]
   },
 
   "River": {
@@ -186,7 +186,7 @@ window.PRODUCT_DATA = {
     price: 2000,
     currency: "EGP",
     longDescription: "لوحة أنتيك لنهر طبيعي بإطار خشبي.",
-    images: ["./Mirror/River.jpg"]
+    images: ["./Mirror/River.webp"]
   },
 
   "S1": {
@@ -195,7 +195,7 @@ window.PRODUCT_DATA = {
     price: 1800,
     currency: "EGP",
     longDescription: "قطعة فنية أنتيك بإطار مزخرف.",
-    images: ["./Mirror/S1.jpg"]
+    images: ["./Mirror/S1.webp"]
   },
 
   "Trees": {
@@ -204,7 +204,7 @@ window.PRODUCT_DATA = {
     price: 2000,
     currency: "EGP",
     longDescription: "لوحة أنتيك لأشجار طبيعية.",
-    images: ["./Mirror/Trees.jpg"]
+    images: ["./Mirror/Trees.webp"]
   },
 
   "BeigeSevres": {
@@ -213,7 +213,7 @@ window.PRODUCT_DATA = {
     price: 4500,
     currency: "EGP",
     longDescription: "طقم أنيق مصنوع من النحاس النقي بلونه البيج النحاسي الدافئ، بتصميم فرنسي كلاسيكي يضيف لمسة راقية للديكور. يتكوّن من فازتين وسنتر بيس.",
-    images: ["./Vases/BeigeSevres.JPG"]
+    images: ["./Vases/BeigeSevres.webp"]
   },
 
     "CandleHolders": {
@@ -222,7 +222,7 @@ window.PRODUCT_DATA = {
     price: 2000,
     currency: "EGP",
     longDescription: "زوج من الشمعدانات الكلاسيكية المصنوعة من المعدن المطلي، بتصميم أنيق يضيف لمسة رومانسية للديكور. مثالية للطاولات أو الأرفف.",
-    images: ["./Vases/CandleHolders.JPG"]
+    images: ["./Vases/CandleHolders.webp"]
   },
 
   "BrassCandleHolders": {
@@ -231,7 +231,7 @@ window.PRODUCT_DATA = {
     price: 2400,
     currency: "EGP",
     longDescription: "شمعدانات أنتيك مصنوعة من النحاس الأصفر، بلمسات يدوية وزخارف دقيقة. تضيف أجواء دافئة وفاخرة لأي غرفة.",
-    images: ["./Vases/BrassCandleHolders.JPG"]
+    images: ["./Vases/BrassCandleHolders.webp"]
   },
 
   "GirlSculpture": {
@@ -240,7 +240,7 @@ window.PRODUCT_DATA = {
     price: 3500,
     currency: "EGP",
     longDescription: "تمثال أنتيك لفتاة بتفاصيل دقيقة، مصنوع من البرونز/الرخام (حسب الخامة الفعلية). قطعة فنية تضيف لمسة كلاسيكية إلى الديكور.",
-    images: ["./Vases/GirlSculpture.jpg"]
+    images: ["./Vases/GirlSculpture.webp"]
   },
 
   "Horses": {
@@ -249,7 +249,7 @@ window.PRODUCT_DATA = {
     price: 3800,
     currency: "EGP",
     longDescription: "مجسم أنتيك لخيول منحوتة بتفاصيل واقعية، يرمز إلى القوة والأناقة. مثالي كقطعة ديكور مركزية.",
-    images: ["./Vases/Horses.JPG"]
+    images: ["./Vases/Horses.webp"]
   },
 
   "Lion": {
@@ -258,7 +258,7 @@ window.PRODUCT_DATA = {
     price: 4000,
     currency: "EGP",
     longDescription: "تمثال أسد أنتيك يرمز إلى الشجاعة والفخامة. مصنوع من خامة متينة مع تفاصيل دقيقة في النحت.",
-    images: ["./Vases/Lion.JPG","./Vases/Lion2.JPG","./Vases/Lion3.JPG"]
+    images: ["./Vases/Lion.webp","./Vases/Lion2.webp","./Vases/Lion3.webp"]
   },
 
     "BohemianCupSet": {
@@ -267,7 +267,7 @@ window.PRODUCT_DATA = {
     price: 3000,
     currency: "EGP",
     longDescription: "طقم أنيق من الكؤوس البوهيمية المصنوعة من الزجاج الفاخر بزخارف يدوية. مثالي للتقديم في المناسبات الخاصة ويضيف لمسة فاخرة إلى المائدة.",
-    images: ["./Glassware/BohemianCupSet.JPG","./Glassware/BohemianCupSet2.JPG"]
+    images: ["./Glassware/BohemianCupSet.webp","./Glassware/BohemianCupSet2.webp"]
   },
 
   "BohemianPinkSet": {
@@ -276,7 +276,7 @@ window.PRODUCT_DATA = {
     price: 3200,
     currency: "EGP",
     longDescription: "طقم زجاج بوهيمي باللون الوردي الفاتح مع زخارف أنيقة. قطعة مميزة تجمع بين الجمال الكلاسيكي واللمسة العصرية.",
-    images: ["./Glassware/BohemianPinkSet.JPG","./Glassware/BohemianPinkSet2.JPG"]
+    images: ["./Glassware/BohemianPinkSet.webp","./Glassware/BohemianPinkSet2.webp"]
   },
 
   "BlueBohemianCups+Spoons": {
@@ -285,7 +285,7 @@ window.PRODUCT_DATA = {
     price: 3500,
     currency: "EGP",
     longDescription: "مجموعة من الكؤوس البوهيمية الزرقاء مع ملاعق مطابقة، مصنوعة بدقة عالية وزخارف فنية تضيف لمسة فاخرة إلى أي مناسبة.",
-    images: ["./Glassware/BlueBohemianCups+Spoons.JPG"]
+    images: ["./Glassware/BlueBohemianCups+Spoons.webp"]
   },
 
     "FrenchGirlMirror": {
@@ -294,7 +294,7 @@ window.PRODUCT_DATA = {
     price: 4200,
     currency: "EGP",
     longDescription: "مرآة فرنسية أنتيك مزينة بصورة فتاة، بإطار مزخرف بتفاصيل دقيقة. قطعة فنية تضيف لمسة رومانسية وكلاسيكية إلى أي غرفة.",
-    images: ["./Mirror/FrenchGirlMirror.JPG","./Mirror/FrenchGirlMirror2.JPG"]
+    images: ["./Mirror/FrenchGirlMirror.webp","./Mirror/FrenchGirlMirror2.webp"]
   },
 
   "MirrorWithGoblan": {
@@ -303,7 +303,7 @@ window.PRODUCT_DATA = {
     price: 4800,
     currency: "EGP",
     longDescription: "مرآة أنتيك مزودة بتابستري (جوبلان) زخرفي في الإطار، تجمع بين الفن النسيجي والديكور الكلاسيكي. قطعة نادرة تضيف فخامة للمكان.",
-    images: ["./Mirror/MirrorWithGoblan.jpg","./Mirror/MirrorWithGoblan2.jpg"]
+    images: ["./Mirror/MirrorWithGoblan.webp","./Mirror/MirrorWithGoblan2.webp"]
   },
 
     "FloorLampCeramic": {
@@ -312,7 +312,7 @@ window.PRODUCT_DATA = {
     price: 5200,
     currency: "EGP",
     longDescription: "أباجورة أرضية أنتيك بقاعدة خزفية مزخرفة، تجمع بين الأناقة الكلاسيكية والوظيفة العملية. تضيف إضاءة دافئة ولمسة فنية إلى أي غرفة.",
-    images: ["./Lighting/FloorLampCeramic.JPG","./Lighting/FloorLampCeramic2.JPG","./Lighting/FloorLampCeramic3.JPG"]
+    images: ["./Lighting/FloorLampCeramic.webp","./Lighting/FloorLampCeramic2.webp","./Lighting/FloorLampCeramic3.webp"]
   },
 
   "2Marble": {
@@ -321,7 +321,7 @@ window.PRODUCT_DATA = {
     price: 6800,
     currency: "EGP",
     longDescription: "زوج من الأباجورات المصنوعة من الرخام الطبيعي مع تفاصيل معدنية أنيقة. مثالية لإضفاء طابع فاخر وكلاسيكي على الديكور.",
-    images: ["./Lighting/2Marble.JPG"]
+    images: ["./Lighting/2Marble.webp"]
   },
 
     "BronzeGirlSculpture": {
@@ -330,7 +330,7 @@ window.PRODUCT_DATA = {
     price: 4200,
     currency: "EGP",
     longDescription: "تمثال أنتيك لفتاة مصبوب من البرونز بتفاصيل دقيقة. قطعة فنية تضيف لمسة كلاسيكية وفاخرة إلى الديكور.",
-    images: ["./Vases/BronzeGirlSculpture.JPG","./Vases/BronzeGirlSculpture2.JPG"]
+    images: ["./Vases/BronzeGirlSculpture.webp","./Vases/BronzeGirlSculpture2.webp"]
   },
 
   "CandleHolderCeramic": {
@@ -339,7 +339,7 @@ window.PRODUCT_DATA = {
     price: 1800,
     currency: "EGP",
     longDescription: "شمعدان أنتيك مصنوع من الخزف المزجج، بتصميم أنيق يضيف لمسة دافئة إلى الطاولة أو الرف.",
-    images: ["./Vases/CandleHolderCeramic.JPG","./Vases/CandleHolderCeramic2.JPG"]
+    images: ["./Vases/CandleHolderCeramic.webp","./Vases/CandleHolderCeramic2.webp"]
   },
 
   "WoodCandleHolder": {
@@ -348,7 +348,7 @@ window.PRODUCT_DATA = {
     price: 1600,
     currency: "EGP",
     longDescription: "شمعدان خشبي أنتيك بتصميم يدوي، يبرز جمال الخشب الطبيعي ويضفي لمسة ريفية كلاسيكية.",
-    images: ["./Vases/WoodCandleHolder.JPG"]
+    images: ["./Vases/WoodCandleHolder.webp"]
   },
 
   "WoodenAnimals": {
@@ -357,7 +357,7 @@ window.PRODUCT_DATA = {
     price: 2500,
     currency: "EGP",
     longDescription: "مجموعة من المنحوتات الخشبية على شكل حيوانات، مصنوعة يدويًا بتفاصيل دقيقة. مثالية كقطع ديكور فريدة.",
-    images: ["./Vases/WoodenAnimals.JPG"]
+    images: ["./Vases/WoodenAnimals.webp"]
   },
 
   "GlassVases": {
@@ -366,7 +366,7 @@ window.PRODUCT_DATA = {
     price: 3000,
     currency: "EGP",
     longDescription: "مجموعة من الفازات الزجاجية الأنيقة بأشكال وأحجام متنوعة. تضيف لمسة عصرية وكلاسيكية في آن واحد.",
-    images: ["./Vases/GlassVases.JPG"]
+    images: ["./Vases/GlassVases.webp"]
   },
 
 
@@ -376,7 +376,7 @@ window.PRODUCT_DATA = {
     price: 7500,
     currency: "EGP",
     longDescription: "خزانة بارافان أنتيك بتصميم كلاسيكي، مصنوعة من الخشب الطبيعي مع لمسات زخرفية يدوية. مثالية للاستخدام كقطعة ديكور عملية وأنيقة في آن واحد.",
-    images: ["./Furniture/Baravan.JPG","./Furniture/Baravan2.JPG"]
+    images: ["./Furniture/Baravan.webp","./Furniture/Baravan2.webp"]
   }
 
 
