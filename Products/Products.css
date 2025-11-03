@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.top-content{
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: #ECDFCC;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding-top: 10px;
+    
+}
+
+.navbar li{
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.navbar a {
+    float: left;
+    color: #16423C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-left {
+    float: right;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .subscribephoto img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px; /* Add margin to space out icons */
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.introhead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(227, 202, 165, 0.9); /* Semi-transparent color */
+    background-image: url("../Home Page/header photo/cinematic-shot-antique-shop-dusk-with-warm-golden-light-spilling-out-from-windows_891336-51228.avif");
+    background-position: center;
+    background-size: cover;
+    color: #BF9270;
+    font-family: "Reem Kufi", sans-serif;
+    text-shadow: 2px 2px #F7EED3;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0px;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #A04747;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+
+    50% {
+        width: 200px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+.top-content {
+    background-color: #FFFBE9;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.top-content h3 {
+    height: 100%;
+    background-color: #AD8B73;
+    line-height: 60px;
+    padding: 0px 50px;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    height: 100px;
+    padding: 20px 5px;
+    margin: 0px 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label:hover {
+    color: #AD8B73;
+}
+
+.photo-gallery {
+
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.pic {
+    position: relative;
+    height: 230px ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.pic::before{
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: (0,0,0,0.4);
+    transition: 0.3s; 
+}
+
+.pic:hover::after{
+    height: 100%;
+}
+
+.pic:hover:before{
+    margin-top: 0;
+    opacity: 2;
+}
+
+#check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative ;
+    transition: 0.5s;
+}
+
+/* All Photos (Show all categories) */
+/* Hide all pics by default with transition for smooth effect */
+.photo-gallery .pic {
+    opacity: 0;
+    transform: scale(0.8); /* Slightly shrink the hidden elements */
+    position: absolute;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+}
+
+/* All Photos (Show all categories) */
+#check1:checked ~ .container .photo-gallery .pic {
+    opacity: 1;
+    transform: scale(1); /* Scale to normal size */
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+/* Furniture Category */
+#check2:checked ~ .container .photo-gallery .Furniture {
+    opacity: 1;
+    transform: scale(1); /* Scale to normal size */
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fine Arts Category */
+#check3:checked ~ .container .photo-gallery .FineArts {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Kitchenware Category */
+#check4:checked ~ .container .photo-gallery .Kitchenware {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Carpets Category */
+#check5:checked ~ .container .photo-gallery .Carpets {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Clocks Category */
+#check6:checked ~ .container .photo-gallery .Clocks {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Glassware Category */
+#check7:checked ~ .container .photo-gallery .Glassware {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Lighting Category */
+#check8:checked ~ .container .photo-gallery .Lighting {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Mirrors Category */
+#check9:checked ~ .container .photo-gallery .Mirrors {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Vases Category */
+#check10:checked ~ .container .photo-gallery .Vases {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Collectables Category */
+#check11:checked ~ .container .photo-gallery .Collectables {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Footer */
+.footer {
+    background-color: #ECDFCC;
+    color: #16423C;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Reem Kufi", sans-serif; /* Apply font to entire footer */
+}
+
+.footer a {
+    color: #16423C;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: "Reem Kufi", sans-serif; /* Ensure links use the font */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p,
+.footer h3,
+.footer h4,
+.footer form input,
+.footer form button {
+    font-family: "Reem Kufi", sans-serif; /* Apply font to all text elements in the footer */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-info p {
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.footer-info h3 {
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.footer-newsletter button {
+    background-color: #A04747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Reem Kufi", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #8B3B3B;
+}

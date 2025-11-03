@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antique Khan Home Page</title>
+
+  <!-- Google Fonts for Arabic & English headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&family=Aref+Ruqaa+Ink:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main CSS file for home page -->
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <!-- Page wrapper (used for fade transition effect between pages) -->
+  <div id="page-wrapper" class="page-ready">
+    
+    <!-- Background image layer (behind everything) -->
+    <div class="background-container" aria-hidden="true"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+      <!-- Arabic title bar -->
+      <div class="introhead">
+        <h2>أنتيك خان</h2>
+      </div>
+
+      <!-- Navbar container -->
+      <div class="navbar">
+
+        <!-- Hamburger icon (only visible on mobile) -->
+        <button class="menu-toggle" aria-label="Open menu" type="button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Desktop navigation links -->
+        <ul class="navbar-middle">
+          <li><a href="index.html"><b>Home</b></a></li>
+          <li><a href="./Shop/shop.html"><b>Shop</b></a></li>
+          <li><a href="./About Us/Customer.html"><b>About Us</b></a></li>
+        </ul>
+
+        <!-- Social icons (only visible on desktop) -->
+        <div class="navbar-left">
+          <div class="subscribephoto">
+            <a href="https://www.facebook.com/profile.php?id=100063938800024"><img src="./header photo/Facebook.png"
+                alt="Facebook"></a>
+            <a href="https://www.instagram.com/antiquekhan.eg"><img src="./header photo/Instagram.png"
+                alt="Instagram"></a>
+            <a href="https://x.com/antiquekhan" target="_blank"><img src="./header photo/X.png" alt="X"></a>
+            <a href="https://chat.whatsapp.com/Ig0PLSZIVo0HJRmucGezVd" target="_blank"><img
+                src="./header photo/Whatsapp.png" alt="WhatsApp"></a>
+            <a href="mailto:antiquekhan.eg@gmail.com"><img src="./header photo/Gmail.png" alt="Email"></a>
+          </div>
+        </div>
+
+        <!-- ===== MOBILE MENU OVERLAY ===== -->
+        <div class="nav-overlay" aria-hidden="true">
+          <!-- semi-transparent dark background -->
+          <div class="overlay-backdrop"></div>
+
+          <!-- overlay content (actual menu on mobile) -->
+          <nav class="overlay-content" role="navigation" aria-label="Mobile menu">
+            <!-- close button -->
+            <button class="overlay-close" aria-label="Close menu">&times;</button>
+
+            <!-- menu links -->
+            <ul class="overlay-links">
+              <li><a href="main.html">Home</a></li>
+              <li><a href="./Shop/shop.html">Shop</a></li>
+              <li><a href="Customer.html">About Us</a></li>
+            </ul>
+
+            <!-- social links repeated for mobile -->
+            <div class="overlay-social">
+              <a href="https://www.facebook.com/profile.php?id=100063938800024"><img
+                  src="./header photo/Facebook.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/antiquekhan.eg"><img src="./header photo/Instagram.png"
+                  alt="Instagram"></a>
+              <a href="https://x.com/antiquekhan"><img src="./header photo/X.png" alt="X"></a>
+              <a href="https://chat.whatsapp.com/Ig0PLSZIVo0HJRmucGezVd"><img src="./header photo/Whatsapp.png"
+                  alt="WhatsApp"></a>
+              <a href="mailto:antiquekhan.eg@gmail.com"><img src="./header photo/Gmail.png" alt="Email"></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- Intro / hero section -->
+      <section class="intro" aria-labelledby="hero-title">
+        <h1 id="hero-title">تحف وأنتيكات فريدة لعشاق التميز والجمال</h1>
+
+        <div class="imagecolumn">
+          <!-- Transparent box behind main image -->
+          <div class="hero-box" aria-hidden="false">
+            <div class="introimg">
+              <!-- Keeps your original hero image and size -->
+              <img src="./inside.png" alt="Intro Image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Button leading to the shop -->
+        <div class="gotoantiques">
+          <button class="cta-btn">
+            <a href="./Shop/shop.html" class="no-underline">!كنوز الماضي تنتظرك هنا</a>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer">
+        <div class="footer-info">
+          <h3>Antique Khan</h3>
+          <p>أناقة الكلاسيكية بأسعار مميزة</p>
+          <p>Located in Alexandria, Egypt</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===== INLINE JS ===== -->
+  <script>
+    // ---------------------------
+    // PAGE FADE TRANSITION LOGIC
+    // ---------------------------
+    (function () {
+      const pageWrapper = document.getElementById("page-wrapper");
+
+      // add smooth fade-out when clicking internal links
+      document.querySelectorAll("a").forEach(link => {
+        const href = link.getAttribute("href") || "";
+        // skip external, mailto, anchor, or new tab links
+        if (href.startsWith("mailto:") || href.startsWith("http") && !href.includes(location.host) || href.startsWith("#") || link.target === "_blank") return;
+
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          pageWrapper.classList.add("fade-out"); // trigger fade-out animation
+          setTimeout(() => { window.location.href = href; }, 300); // redirect after fade
+        });
+      });
+    })();
+
+    // ---------------------------
+    // MOBILE OVERLAY MENU LOGIC
+    // ---------------------------
+    (function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navOverlay = document.querySelector(".nav-overlay");
+      const overlayBackdrop = navOverlay.querySelector(".overlay-backdrop");
+      const overlayClose = navOverlay.querySelector(".overlay-close");
+
+      // open overlay
+      function openOverlay() {
+        navOverlay.classList.add("active");
+        menuToggle.classList.add("open");
+        navOverlay.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden"; // prevent background scroll
+      }
+
+      // close overlay
+      function closeOverlay() {
+        navOverlay.classList.remove("active");
+        menuToggle.classList.remove("open");
+        navOverlay.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      // toggle menu
+      menuToggle.addEventListener("click", () => {
+        if (!navOverlay.classList.contains("active")) openOverlay();
+        else closeOverlay();
+      });
+
+      // close controls
+      overlayBackdrop.addEventListener("click", closeOverlay);
+      overlayClose.addEventListener("click", closeOverlay);
+
+      // ESC key closes menu
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && navOverlay.classList.contains("active")) closeOverlay();
+      });
+
+      // clicking a link inside overlay closes it
+      navOverlay.querySelectorAll("a").forEach(a => a.addEventListener("click", closeOverlay));
+
+      // accessibility: toggle with Enter/Space keys
+      menuToggle.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          menuToggle.click();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

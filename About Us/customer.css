@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Header and Navbar same as shop.css */
+.navbar {
+    background-color: #ECDFCC;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding-top: 10px;
+}
+
+.navbar a {
+    float: left;
+    color: #16423C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-left {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .subscribephoto img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.introhead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(227, 202, 165, 0.9);
+    background-image: url("../header photo/cinematic-shot-antique-shop-dusk-with-warm-golden-light-spilling-out-from-windows_891336-51228.avif");
+    background-position: center;
+    background-size: cover;
+    color: #BF9270;
+    font-family: "Reem Kufi", sans-serif;
+    text-shadow: 2px 2px #F7EED3;
+}
+
+/* About Page Layout */
+.about-container {
+    background-color: #FFFBE9;
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #3D3D3D;
+    font-family: "Reem Kufi", sans-serif;
+    line-height: 1.8;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: #A04747;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #5C4033;
+    margin-bottom: 40px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    color: #16423C;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-section p, 
+.about-section ul {
+    font-size: 18px;
+    color: #3D3D3D;
+}
+
+.about-section ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #ECDFCC;
+    color: #16423C;
+    text-align: center;
+    padding: 20px;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 28px;
+    }
+
+    .about-section h2 {
+        font-size: 22px;
+    }
+}
